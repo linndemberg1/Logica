@@ -1,0 +1,124 @@
+EXEMPLO 1: POSITIVO, NEGATIVO OU NULO
+
+package br.com.pnn;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		int n;
+		
+		System.out.println("Digite um número:");
+		 n = scanner.nextInt();
+		 
+		 if (n>0) {
+			 System.out.println( n + " é positivo!");
+		 }
+		 else if (n<0) {
+			 System.out.println( n + " é Negativo!");
+		 }
+		 else {
+			 System.out.println( n + " é Nulo!");
+		 }
+	}
+
+}
+
+
+
+EXEMPLO 2: NUMERO PAR OU IMPAR
+
+package br.com.parimpar;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		 int numero;
+		 
+		 Scanner scanner = new Scanner(System.in);
+		 
+		 System.out.println("Digite um número:");
+		 numero = scanner.nextInt();
+		 
+		 if (numero % 2 == 0)
+		 {
+			 System.out.println(numero + " É PAR!");
+		 }
+		 else {
+			 System.out.println(numero + " É ÍMPAR!");
+		 }
+
+	}
+
+}
+
+
+EXEMPLO 3: NOTAS DE ALUNOS
+package br.com.notasaluno;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		Float n1, n2, n3, n4, soma, media;
+		String nome;
+		
+		
+		System.out.println("Digite o nome do aluno:");
+		 nome = scanner.next();
+		 
+		 System.out.println("Digite a Nota 1:");
+		 n1 = scanner.nextFloat();
+		 System.out.println("Digite a Nota 2:");
+		 n2 = scanner.nextFloat();
+		 System.out.println("Digite a Nota 3:");
+		 n3 = scanner.nextFloat();
+		 System.out.println("Digite a Nota 4:");
+		 n4 = scanner.nextFloat();
+		 
+		 soma = n1+n2+n3+n4;
+		 
+		 media = soma/4;
+		 
+		 System.out.println("A média do aluno " + nome + " é: " + media);
+		 
+		 
+	}
+
+}
+
+
+EXEMPLO 4: VERIFICAR A CAPITAL DO BRASIL
+
+package br.com.capital;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		String c;
+		
+		System.out.println("Digite o nome da Capital:");
+		c = scanner.next();
+		
+		if (c.equalsIgnoreCase("Brasilia"))
+		{
+			System.out.println("O nome " + c + " digitado está correto! " + c + " é a Capital do Brasil!");
+		}
+		else 
+		{
+			System.out.println("Nome incorreto!");
+		}
+	}
+
+}
